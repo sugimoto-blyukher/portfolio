@@ -1,6 +1,6 @@
 <script>
 	import SiteShell from '$lib/components/layout/SiteShell.svelte';
-	import { goals } from '$lib/data/home.js';
+	import { goals } from '$lib/data/home.ts';
 </script>
 
 <SiteShell>

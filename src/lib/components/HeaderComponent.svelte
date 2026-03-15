@@ -5,7 +5,8 @@
 		{ href: '/', label: 'About me' },
 		{ href: '/timeline', label: 'タイムライン' },
 		{ href: '/goal.html', label: '目標' },
-		{ href: '#links', label: '関連リンク集' }
+		{ href: '/projects', label: 'プロジェクト集' },
+		{ href: '/links', label: '関連リンク集' }
 	];
 
 	let menu: HTMLElement;
