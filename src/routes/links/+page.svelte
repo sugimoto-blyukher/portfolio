@@ -4,7 +4,7 @@
 </script>
 
 <SiteShell>
-	<main class="bg-amber-400">
+	<main class="bg-amber-400 min-h-screen flex flex-col">
 		<section class="container mx-auto px-4 py-8">
 			<h1 class="text-4xl font-bold mb-8">Links</h1>
 			<div class="border-l-2 border-gray-300 pl-4">

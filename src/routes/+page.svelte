@@ -11,8 +11,7 @@
 		>
 			<div class="flex justify-center md:justify-end">
 				<img
-					src="/ore.jpg"
-					alt="Sugimoto"
+					src="/ore2.png"	alt="Sugimoto"
 					class="w-full max-w-md h-auto object-cover rounded-lg shadow-lg"
 				/>
 			</div>

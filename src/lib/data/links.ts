@@ -11,9 +11,14 @@ export const links: Link[] = [
     description: '私のGitHubアカウントです。私のプロジェクトを公開しています。',
   },
   {
-    title: 'X (旧Twitter)',
+    title: 'X (旧Twitter) (sugimoto(cedar root))',
     url: 'https://twitter.com/sug1m0t0_unk',
-    description: '私のTwitterアカウントです。最新の情報や投稿を確認できます。',
+    description: '私の大学用のXアカウントです。最新の情報や投稿を確認できます。',
+  },
+  {
+    title: 'X (旧Twitter) (sugimoto)',
+    url: 'https://twitter.com/SanMa3MaSunMa',
+    description: '私のXアカウント2です。ロボティクスや低レイヤーなどの技術系のネタや日常をつぶやきます。',
   },
   {
     title: 'sugimoto',
