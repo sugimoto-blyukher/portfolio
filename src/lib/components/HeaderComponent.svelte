@@ -1,44 +1,32 @@
 <script lang="ts">
-	import { gsap } from 'gsap';
+	import { navigationLinks } from '$lib/data/navigation.js';
 
-	const links = [
-		{ href: '/', label: 'About me' },
-		{ href: '/timeline', label: 'タイムライン' },
-		{ href: '/goal.html', label: '目標' },
-		{ href: '/projects', label: 'プロジェクト集' },
-		{ href: '/links', label: '関連リンク集' }
-	];
-
-	let menu: HTMLElement;
-	let overlay: HTMLElement;
-
-	const duration = 0.5;
-	const ease = 'power3.inOut';
+	let isMenuOpen = $state(false);
 
 	function openMenu() {
-		gsap.to(menu, { x: 0, duration, ease });
-		gsap.to(overlay, { opacity: 1, pointerEvents: 'auto', duration });
+		isMenuOpen = true;
 	}
 
 	function closeMenu() {
-		gsap.to(menu, { x: '100%', duration, ease });
-		gsap.to(overlay, { opacity: 0, pointerEvents: 'none', duration });
+		isMenuOpen = false;
 	}
 </script>
 
 <!-- Overlay for menu -->
 <button
 	type="button"
-	bind:this={overlay}
-	class="fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-40"
+	class={`fixed inset-0 z-40 bg-black/50 transition-opacity duration-300 ${
+		isMenuOpen ? 'pointer-events-auto opacity-100' : 'pointer-events-none opacity-0'
+	}`}
 	onclick={closeMenu}
 	aria-label="メニューを閉じる"
 ></button>
 
 <!-- Slide Menu -->
 <nav
-	bind:this={menu}
-	class="fixed top-0 right-0 w-64 h-full bg-cyan-900 text-white z-50 transform translate-x-full shadow-2xl dotgothic16-regular"
+	class={`fixed top-0 right-0 z-50 h-full w-64 transform bg-cyan-900 text-white shadow-2xl transition-transform duration-500 ease-in-out dotgothic16-regular ${
+		isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+	}`}
 >
 	<div class="p-6 flex flex-col h-full">
 		<div class="flex justify-end mb-8">
@@ -65,13 +53,15 @@
 			</button>
 		</div>
 		<ul class="space-y-6 text-2xl text-center">
-			{#each links as link (link.href)}
+			{#each navigationLinks as link (link.href)}
 				<li>
 					<a
 						href={link.href}
 						class="hover:text-amber-400 block py-2 border-b border-cyan-700"
-						onclick={closeMenu}>{link.label}</a
+						onclick={closeMenu}
 					>
+						{link.label}
+					</a>
 				</li>
 			{/each}
 		</ul>

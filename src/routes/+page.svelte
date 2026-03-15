@@ -1,6 +1,6 @@
 <script>
 	import SiteShell from '$lib/components/layout/SiteShell.svelte';
-	import { goals } from '$lib/data/home.ts';
+	import { goals } from '$lib/data/home.js';
 </script>
 
 <SiteShell>
@@ -11,7 +11,8 @@
 		>
 			<div class="flex justify-center md:justify-end">
 				<img
-					src="/ore2.png"	alt="Sugimoto"
+					src="/ore2.png"
+					alt="Sugimoto"
 					class="w-full max-w-md h-auto object-cover rounded-lg shadow-lg"
 				/>
 			</div>
