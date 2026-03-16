@@ -14,14 +14,14 @@
 	/>
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="#" />
-	<meta property="og:image" content="/ore.jpg" />
+	<meta property="og:image" content="/ore2.png" />
 	<meta property="og:site_name" content="Sugimotoのポートフォリオ" />
 
 	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="Sugimotoのポートフォリオ" />
 	<meta name="twitter:description" content="Sugimotoのポートフォリオ。" />
-	<meta name="twitter:image" content="/ore.jpg" />
+	<meta name="twitter:image" content="/ore2.png" />
 
 	<title>Sugimoto Portfolio</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
