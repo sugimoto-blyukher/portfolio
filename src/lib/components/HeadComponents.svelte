@@ -10,7 +10,7 @@
 	<meta property="og:title" content="スギモトのポートフォリオ | Sugimoto's Portfolio" />
 	<meta
 		property="og:description"
-		content="学部1年生シンタのポートフォリオ。制御工学、ロボティクス、低レイヤーやFPGAに興味があります。"
+		content="Sugimotoのポートフォリオ。制御工学、ロボティクス、低レイヤーやFPGAに興味があります。"
 	/>
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="#" />
