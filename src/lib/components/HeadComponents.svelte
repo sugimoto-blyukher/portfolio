@@ -7,7 +7,7 @@
 	<link rel="apple-touch-icon" href="/ore.jpg" />
 
 	<!-- OGP Tags -->
-	<meta property="og:title" content="シンタのホームページ | Sugimoto Portfolio" />
+	<meta property="og:title" content="スギモトのポートフォリオ | Sugimoto's Portfolio" />
 	<meta
 		property="og:description"
 		content="学部1年生シンタのポートフォリオ。制御工学、ロボティクス、低レイヤーやFPGAに興味があります。"
