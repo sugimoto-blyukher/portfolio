@@ -19,7 +19,6 @@
 
 			<div class="flex flex-col items-center text-center dotgothic16-regular">
 				<h1 class="text-4xl pt-4 md:pt-0 font-bold">About me</h1>
-				<p class="pt-4 text-xl">Sugimotoのポートフォリオ</p>
 				<p class="text-lg">公立はこだて未来大学１年生です。</p>
 				<p class="text-lg px-4">制御工学、ロボティクス、低レイヤーやfpgaなどに興味があります。</p>
 				<p class="text-lg px-4">最近は低レイヤーに焦点を絞って学習に取り組んでいます</p>
